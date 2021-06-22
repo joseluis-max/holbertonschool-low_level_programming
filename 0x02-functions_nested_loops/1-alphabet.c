@@ -1,10 +1,4 @@
-#include <stdio.h>
-/**
- * print_alphabet - alphabet in lower case
- *
- * Return: 
-
-
+#include "holberton.h"
 /**
  * main - call print_alphabet
  * 
@@ -12,5 +6,6 @@
  */
 int main(void)
 {
-	
+	print_alphabet();
+	return (0);	
 }
