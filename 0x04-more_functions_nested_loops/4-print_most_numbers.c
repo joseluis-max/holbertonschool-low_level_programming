@@ -8,7 +8,9 @@ void print_numbers(void)
 
 	while (i < 58)
 	{
-		if (i != 50 || i != 53)
+		if (i == 50 || i == 53)
+		{}
+		else
 		{
 			_putchar(i);
 		}
