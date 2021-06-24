@@ -22,35 +22,37 @@ void print_times_table(int n)
 			if (r < 10)
 			{
 				_putchar(r + 48);
-				if (i < n)
+				if(i < n)
 				{
 					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-					_putchar(32);
+                                	_putchar(32);
+                                	_putchar(32);
+                                	_putchar(32);
 				}
 			}
 			else if (r < 100)
 			{
 				_putchar(r / 10 + 48);
 				_putchar(r % 10 + 48);
-				if (i < n)
-				{
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-				}
+				 if(i < n)
+                                {
+                                        _putchar(44);
+                                        _putchar(32);
+                                        _putchar(32);
+                                }
+
 			}
 			else if (r < 1000)
 			{
 				_putchar(r / 100 + 48);
 				_putchar(48 + ((r / 10) % 10));
 				_putchar(48 + (r % 10));
-				if (i < n)
-				{
-					_putchar(44);
-					_putchar(32);
-				}
+				 if(i < n)
+                                {
+                                        _putchar(44);
+                                        _putchar(32);
+                                }
+
 			}
 			else
 			{
@@ -58,11 +60,8 @@ void print_times_table(int n)
 				_putchar(48 + (r / 100) % 10);
 				_putchar(48 + (r / 10) % 10);
 				_putchar(48 + r % 10);
-				if (i < n)
-				{
-					_putchar(44);
-					_putchar(32);
-				}
+				_putchar(44);
+				_putchar(32);
 			}
 			i++;	
 		}
