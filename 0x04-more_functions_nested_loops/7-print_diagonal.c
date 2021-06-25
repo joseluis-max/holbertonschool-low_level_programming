@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print-diagonal - diagonal print
+ * print_diagonal - diagonal print
  * @n: inter number
  */
 void print_diagonal(int n)
