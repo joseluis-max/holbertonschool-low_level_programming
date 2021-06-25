@@ -12,9 +12,11 @@ void print_diagonal(int n)
 	else
 	{
 		int j = 0;
+
 		while (j < n)
 		{
 			int i = 0;
+
 			while (i <= (j + 1))
 			{
 				_putchar(32);
