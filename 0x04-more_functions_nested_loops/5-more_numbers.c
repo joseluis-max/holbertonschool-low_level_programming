@@ -12,11 +12,11 @@ void more_numbers(void)
 
 		while (j < 15)
 		{
-			 _putchar(j / 10 + 48);
 			if (j > 9)
 			{
-				_putchar(j % 10 + 48);
+				_putchar(j / 10 + 48);
 			}
+			_putchar(j % 10 + 48);
 			j++;
 		}
 		i++;
