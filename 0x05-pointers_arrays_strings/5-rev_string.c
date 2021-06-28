@@ -14,9 +14,9 @@ void rev_string(char *s)
 	}
 	for (i = 0; i < c / 2; i++)
 	{
-		int tmp = *(s + (c / 2) + i);
+		char tmp = *(s + ((c - 1) - i));
 
-		*(s + i + (c/2)) = *(s + i);
+		*(s + ((c - 1) - i)) = *(s + i);
 		*(s + i) = tmp;	
 	}
 }
