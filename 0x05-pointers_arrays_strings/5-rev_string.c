@@ -6,17 +6,17 @@
 void rev_string(char *s)
 {
 	int c = 0;
+	int i;
 
-	while (*s != '\0')
+	while (*(s + c) != '\0')
 	{
 		c++;
-		s++;
 	}
-	while (c > 0)
+	for (i = 0; i < c / 2; i++)
 	{
-		s--;
-		_putchar(*s);
-		c--;
+		int tmp = *(s + (c / 2) + i);
+
+		*(s + i + (c/2)) = *(s + i);
+		*(s + i) = tmp;	
 	}
-	_putchar('\n');
 }
