@@ -3,7 +3,7 @@
  * puts2 - print every other character
  * @str: string for print
  */
-void puts2(char *str);
+void puts2(char *str)
 {
 	while (*str != '\0')
 	{
