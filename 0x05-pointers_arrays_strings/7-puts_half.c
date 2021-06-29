@@ -1,28 +1,23 @@
 #include "holberton.h"
 /**
- * puts_half(char *str);
+ * puts_half - half string;
  * @str: string for print
  */
 void puts_half(char *str)
 {
 	int c = 0;
-	int n;
+	int n = 0;
 
 	while (*(str + c) != '\0')
 	{
 		c++;
 	}
-	if (c % 2 == 0)
+	while (*(str + c) != '\0')
 	{
-		n = c / 2;
-	}
-	else
-	{
-		n = (c - 1) / 2;
-	}
-	while (n - 1 < c)
-	{
-		_putchar(str[n]);
+		if (n > (n - 1)/2)
+		{
+			_putchar(str[n]);
+		}
 		n++;
 	}
 	_putchar('\n');
