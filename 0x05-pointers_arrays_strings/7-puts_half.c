@@ -6,7 +6,7 @@
 void puts_half(char *str)
 {
 	int c = 0;
-	int i = n;
+	int n;
 
 	while (*s != '\0')
 	{
