@@ -13,10 +13,10 @@ void puts_half(char *str)
 		c++;
 	}
 	n = (c - 1) / 2;
-	while (n + 1 < c)
+	while (n < c)
 	{
 		_putchar(str[n]);
-		n++;
+		++n;
 	}
 	_putchar('\n');
 }
