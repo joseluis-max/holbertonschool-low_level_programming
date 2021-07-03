@@ -30,6 +30,7 @@ char *leet(char *str)
 			str[i] = '1';
 		if (str[i] == 'L')
 			str[i] = '1';
+		i++;
 	}
 	return (str);
 }
