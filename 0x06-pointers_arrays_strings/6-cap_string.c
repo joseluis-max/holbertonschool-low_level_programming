@@ -10,10 +10,6 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
-		if (str[i] == '\t')
-		{
-			str[i] = ' ';
-		}
 		if (str[i] > 96 && str[i] < 123)
 		{
 			switch (str[i - 1])
