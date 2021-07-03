@@ -12,23 +12,23 @@ char *leet(char *str)
 	{
 		if (str[i] == 'a')
 			str[i] = '4';
-		if (str[i] == 'A')
+		else if (str[i] == 'A')
 			str[i] = '4';
-		if (str[i] == 'e')
+		else if (str[i] == 'e')
 			str[i] = '3';
-		if (str[i] == 'E')
+		else if (str[i] == 'E')
 			str[i] = '3';
-		if (str[i] == 'o')
+		else if (str[i] == 'o')
 			str[i] = '0';
-		if (str[i] == 'O')
+		else if (str[i] == 'O')
 			str[i] = '0';
-		if (str[i] == 't')
+		else if (str[i] == 't')
 			str[i] = '7';
-		if (str[i] == 'T')
+		else if (str[i] == 'T')
 			str[i] = '7';
-		if (str[i] == 'l')
+		else if (str[i] == 'l')
 			str[i] = '1';
-		if (str[i] == 'L')
+		else if (str[i] == 'L')
 			str[i] = '1';
 		i++;
 	}
