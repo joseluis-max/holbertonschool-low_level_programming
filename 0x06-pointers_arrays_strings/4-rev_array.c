@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * reverser_array - reverse array
+ * reverse_array - reverse array
  * @a: array of integers
  * @n: long of a
  */
