@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				i++;
 			}
-			if (accet[j])
+			if (accept([j])
 			{
 				return (i);
 			}
