@@ -3,15 +3,12 @@
  * @s: pointer to string
  * Return: large of the string in integer.
  */
-
-int i = 0;
-
 int _strlen_recursion(char *s)
 {
-	if (s[i] == '\0')
+	if (*s == '\0')
 	{
-		return (i);
+		return (0);
 	}
-	i++
-	_strlen_recursion(s);
+	s++;
+	return (1 + _strlen_recursion(s));
 }
