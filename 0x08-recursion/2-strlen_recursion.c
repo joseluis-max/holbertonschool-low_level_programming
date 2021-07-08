@@ -1,7 +1,8 @@
 #include "holberton.h"
-/** _strlen_recursion - count long of string with recursion
+/** 
+ * _strlen_recursion - count long of string with recursion
  * @s: pointer to string
- * Return: large of the string in integer.
+ * Return: large of the string in integer
  */
 int _strlen_recursion(char *s)
 {
