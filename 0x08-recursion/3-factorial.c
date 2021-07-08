@@ -4,7 +4,7 @@
  * @n: integer number
  * Return: n < 0 -> -1, factorial of n
  */
-int factorial (int n)
+int factorial(int n)
 {
 	if (n < 0)
 	{
