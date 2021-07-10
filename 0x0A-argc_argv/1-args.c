@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
-/** main - length of arguments
+/**
+ * main - length of arguments
  * @argc: length of arguments
  * @argv: arguments vector
  * Return: 1 or 0
