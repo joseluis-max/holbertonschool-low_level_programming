@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  * create_array - create an array with specific strin
  * @size: lenght of array
