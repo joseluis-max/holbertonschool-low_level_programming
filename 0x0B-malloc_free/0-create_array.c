@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 
 	while (str)
 	{
-		str[i] = c;
+		*str[i] = c;
 		i++;
 	}
 	return (str);
