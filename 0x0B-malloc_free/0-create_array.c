@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stddef.h>
 /**
  * create_array - create an array with specific strin
  * @size: lenght of array
@@ -9,8 +10,12 @@
 char *create_array(unsigned int size, char c)
 {
 	int i = 0;
-	char *str = malloc(sizeof(char) * size);
+        char *str = malloc(sizeof(char) * size);
 
+	if (size == 0)
+	{
+		return (NULL);
+	}
 	while (str)
 	{
 		*(str + i) = c;
