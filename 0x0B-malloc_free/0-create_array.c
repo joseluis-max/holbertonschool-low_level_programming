@@ -16,10 +16,11 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	while (str[i] != '\0')
+	for (i; str[i] < size; i++)
 	{
 		str[i] = c;
 		i++;
 	}
+	strp[i] = '\0';
 	return (str);
 }
