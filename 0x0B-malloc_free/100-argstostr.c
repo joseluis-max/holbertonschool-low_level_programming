@@ -18,9 +18,11 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (row = 0; row < ac; row++)
+	row = 0;
+	for (; row < ac; row++)
 	{
-		for (col = 0; av[row][col] != '\0'; col++)
+		col = 0;
+		for (; av[row][col] != '\0'; col++)
 		{
 			c++;
 		}
