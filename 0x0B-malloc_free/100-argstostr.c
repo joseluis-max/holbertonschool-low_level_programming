@@ -28,9 +28,11 @@ char *argstostr(int ac, char **av)
 	str = malloc(sizeof(char) * c + ac + 1);
 	if (str == NULL)
 		return (NULL);
-	for (row = 0; row < ac; row++)
+	row = 0;
+	for (; row < ac; row++)
 	{
-		for (col = 0; av[row][col] != '\0'; col++)
+		col = 0;
+		for (; av[row][col] != '\0'; col++)
 		{
 			str[i] = av[row][col];
 			i++;
