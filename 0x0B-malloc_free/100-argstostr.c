@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 	int row;
 	int col;
 	int c;
-	int i;
+	int i = 0;
 
 	if (ac == 0 || av == NULL)
 	{
@@ -28,7 +28,6 @@ char *argstostr(int ac, char **av)
 	str = malloc(sizeof(char) * c + ac + 1);
 	if (str == NULL)
 		return (NULL);
-	i = 0;
 	for (row = 0; row < ac; row++)
 	{
 		for (col = 0; av[row][col] != '\0'; col++)
