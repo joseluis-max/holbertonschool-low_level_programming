@@ -4,6 +4,7 @@
  * argstostr - concat all arguments
  * @ac: argument counter
  * @av: arguments 2D array
+ * Return: new string
  */
 char *argstostr(int ac, char **av)
 {
@@ -28,15 +29,15 @@ char *argstostr(int ac, char **av)
 	if (str == NULL)
 		return (NULL);
 	for (row = 0; row < ac; row++)
-        {
-                for (col = 0; av[row][col] != '\0'; col++)
-                {
-                        str[i] = av[row][col];
+	{
+		for (col = 0; av[row][col] != '\0'; col++)
+		{
+			str[i] = av[row][col];
 			i++;
-                }
+		}
 		str[i] = '\n';
 		i++;
-        }
+	}
 	return (str);
 
 }
