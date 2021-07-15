@@ -12,10 +12,10 @@ int **alloc_grid(int width, int height)
 	int column;
 	char **array;
 
-	array = malloc(sizeof(int *) * heigth);
+	array = malloc(sizeof(int *) * height);
 	for (row = 0; row < height; row++)
 	{
-		array[row] = malloc(sizeof( ) * width);
+		array[row] = malloc(sizeof(int) * width);
 		for (column = 0; column < width; column++)
 		{
 			array[row][column] = 0;
