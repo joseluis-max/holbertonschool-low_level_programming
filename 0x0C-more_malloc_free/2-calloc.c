@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 
 	if (nmeb == 0 || size == 0)
 		return (NULL);
-	arr = malloc(size + 1);
+	arr = malloc((nmeb * size) + 1);
 	if (arr == NULL)
 		return (NULL);
 	for (i = 0; i < nmeb; i++)
