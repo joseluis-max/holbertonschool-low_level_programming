@@ -3,7 +3,7 @@
 /**
  * string_nconcat - concat two strings
  * @s1: string
- * @s2: string 
+ * @s2: string
  * @n: number
  * Return: pointer new string
  */
