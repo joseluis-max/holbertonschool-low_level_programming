@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
-
-/** 
+/**
  * array_range - create an array of integers
  * @min: start
  * @max: end
@@ -23,5 +22,5 @@ int *array_range(int min, int max)
 	{
 		arr[i] = min + i;
 	}
-	return (arr);	
+	return (arr);
 }
