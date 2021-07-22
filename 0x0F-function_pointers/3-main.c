@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - calc 
+ * main - calc
  * @argc: long of argv
  * @argv: array with a, op and b
  * Return: operation result
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]);
 	int b = atoi(argv[3]);
@@ -18,18 +18,18 @@ int main (int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (1);
+		exit(98);
 	}
 	if ((*op == '/' && b == 0) || (*op == '%' && b == 0))
 	{
 		printf("Error\n");
-		return (1);
+		exit(100);
 	}
 	operation = get_op_func(op);
 	if (operation == NULL)
 	{
 		printf("Error\n");
-		return (1);
+		exit(99);
 	}
 	r = operation(a, b);
 	printf("%d\n", r);
