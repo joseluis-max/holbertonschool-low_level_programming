@@ -23,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(ap, n);
 	sum = 0;
 	for (i = 0; i < n; i++)
-		sum += var_arg(ap, int);
+		sum += va_arg(ap, int);
 	/*
 	 * Retrieve an argument
 	 * @type va_list
