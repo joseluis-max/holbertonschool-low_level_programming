@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list arg;
 	char *str;
 
-	if (n != 0)
+	if (n > 0)
 	{
 		va_start(arg, n);
 		for (i = 0; i < n; i++)
