@@ -6,8 +6,7 @@
  */
 void _print_char(va_list list)
 {
-	if (list != NULL)
-		printf("%c", va_arg(list, int));
+	printf("%c", va_arg(list, int));
 }
 /**
  * _print_integer - print a integer
@@ -15,8 +14,7 @@ void _print_char(va_list list)
  */
 void _print_integer(va_list list)
 {
-	if (list != NULL)
-		printf("%d", va_arg(list, int));
+	printf("%d", va_arg(list, int));
 }
 /**
  * _print_float - print a float
@@ -24,8 +22,7 @@ void _print_integer(va_list list)
  */
 void _print_float(va_list list)
 {
-	if (list != NULL)
-		printf("%f", va_arg(list, double));
+	printf("%f", va_arg(list, double));
 }
 /**
  * _print_string - print a string
@@ -34,10 +31,8 @@ void _print_float(va_list list)
 void _print_string(va_list list)
 {
 	char *str = va_arg(list, char *);
-	if (list != NULL)
-	{
-		if(str != NULL)
-			printf("%s", str);
-	}
-	printf("(nil)");
+	if (str != NULL)
+		printf("%s", str);
+	else
+		printf("(nil)");
 }

@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	int j = 0;
+	int j;
 	char *separator = "";
 	va_list list;
 	void (*printting)(va_list);
@@ -17,12 +17,13 @@ void print_all(const char * const format, ...)
 		{"i", _print_integer},
 		{"f", _print_float},
 		{"s", _print_string},
-		{"NULL", NULL}
+		{NULL, NULL}
 	};
 	va_start(list, format);
-	while (format[i])
+	while (format && format[i])
 	{
-		while (print[j].type[0] == format[i])
+		j = 0;
+		while (print[j].type)
 		{
 			if (print[j].type[0] == format[i])
 			{
