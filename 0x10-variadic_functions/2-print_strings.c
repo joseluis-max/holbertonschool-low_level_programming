@@ -17,9 +17,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (n != 0)
 	{
 		va_start(arg, n);
-		str = va_arg(arg, char *);
 		for (i = 0; i < n; i++)
 		{
+			str = va_arg(arg, char *);
 			if (str == NULL)
 			{
 				printf("(nil)");
