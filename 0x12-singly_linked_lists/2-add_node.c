@@ -15,10 +15,18 @@ list_t *add_node(list_t **head, const char *str)
 
 	node = malloc(sizeof(list_t));
 	if (node == NULL || str == NULL)
+	{	free(node);
 		return (NULL);
+	}
 	while (str[i])
 		i++;
 	node->str = malloc(sizeof(char) * i);
+	if (node->str == NULL)
+	{
+		free(node->str);
+		free(node);
+		return (NULL);
+	}
 	while (j < i)
 	{
 		node->str[j] = str[j];
