@@ -17,8 +17,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	h = *head;
 	node = malloc(sizeof(list_t));
 	if (node == NULL || str == NULL)
+	{
 		free(node);
 		return (NULL);
+	}
 	while (str[i])
 		i++;
 	node->str = malloc(sizeof(char) * i);
