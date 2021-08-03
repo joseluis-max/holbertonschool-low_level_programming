@@ -2,7 +2,7 @@
 /**
  * get_nodeint_at_index - get a node in index
  * @head: pointer two head
- * @int: index
+ * @index: index
  * Return: listint_t
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
