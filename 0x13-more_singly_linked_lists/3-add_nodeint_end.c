@@ -4,7 +4,7 @@
 /**
  * add_nodeint_end - add node at the beginning of a list
  * @head: double pointer two head;
- * n: new int two add
+ * @n: new int two add
  * Return: address of a new element or NULL if it failed
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
