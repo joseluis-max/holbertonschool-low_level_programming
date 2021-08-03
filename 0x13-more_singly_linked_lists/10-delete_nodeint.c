@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - insert node
  * @head: pointer to struct listint_t
- * @idx: index
+ * @index: index
  * Return: listint_t
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
