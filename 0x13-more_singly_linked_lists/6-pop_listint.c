@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
-/** pop_listint - delete head and return data
+/**
+ * pop_listint - delete head and return data
  * @head: struct listint_t
  * Return: data n
  */
