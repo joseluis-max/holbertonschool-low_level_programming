@@ -70,7 +70,13 @@ __What is the default program name when compiling with gcc?__
 
 __What is the official C coding style and how to check your code with betty-style__
 
+-  [Linux Kernel coding style](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/process/coding-style.rst), but it's slightly modified.
+
  __How to find the right header to include in your source code when using a standard library function?__
+ 
+ - I think you need to check your function documentation. If you are in Linux you can just use "man" and check for the documentation, that if the function itself has a main function.
+For example, if you run "man 3 printf" it will show the library file (stdio.h) you need.
+But if what you want to know is which file includes your function, you can run the preprocessor, and read that file, it usually has the unwrapped information.
  
  __How does the main function influence the return value of the program?__
  
