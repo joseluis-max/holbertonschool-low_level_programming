@@ -4,6 +4,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
 /**
  * main - copy file in other file
  * @argc: numbers of arguments
@@ -50,14 +51,14 @@ int main(int argc, char *argv[])
 	status_close = close(fd_from);
 	if (status_close == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 	status_close_2 = close(fd_to);
 	if (status_close_2 == -1)
 	{
 		exit(100);
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 	}
 	return (0);
 }
