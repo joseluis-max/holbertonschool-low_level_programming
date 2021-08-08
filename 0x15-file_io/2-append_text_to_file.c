@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 /**
- * append_text_file - concat text in file
+ * append_text_to_file - concat text in file
  * @filename: file for concat
  * @text_content: new sting
  * Return: 1 or -1
