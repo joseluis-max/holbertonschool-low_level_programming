@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * add_nodeint - add node in double linked list
+ * add_dnodeint - add node in double linked list
  * @head: pointer to double linked list
  * @n: new node value
  * Return: Addres of the new element, of NULL if it failed
