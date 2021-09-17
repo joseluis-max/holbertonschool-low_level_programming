@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * dlistint - to get a len of dlistint
+ * dlistint_len - to get a len of dlistint
  * @h: header double linked lists
  * Return: number of elements
  */
