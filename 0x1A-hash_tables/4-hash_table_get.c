@@ -8,7 +8,7 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int index;
+	unsigned long int index = 0;
 
 	index = key_index((unsigned char *)key, ht->size);
 
