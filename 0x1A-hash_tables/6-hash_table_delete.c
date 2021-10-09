@@ -22,7 +22,7 @@ void hash_table_delete(hash_table_t *ht)
 				if (tmp2->key && tmp2->value)
 				{
 					free(tmp2);
-				}				
+				}
 			}
 			free(tmp);
 		}
