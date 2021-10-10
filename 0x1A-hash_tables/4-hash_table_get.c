@@ -12,14 +12,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	index = key_index((unsigned char *)key, ht->size);
 
-	if (ht->array[index] != NULL)
+	while (ht->array[index] != NULL)
 	{
-		return (ht->array[index]->value);
+		if (ht->array[index] != NULL)
+		{
+			return (ht->array[index]->value);
+		}
+		ht->array[index] = ht->array[index]->next;
 	}
-	else
-	{
-		return (NULL);
-	}
-
-
+	return (NULL);
 }
