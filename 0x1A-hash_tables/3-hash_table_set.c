@@ -22,7 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (status);
 	index = key_index((unsigned char *)key, ht->size);
 	node_pointer = ht->array[index];
-	while (ht->array[index] != NULL)
+	while (node_pointer != NULL)
 	{
 		if (strcmp(node_pointer->key, key) == 0)
 		{
