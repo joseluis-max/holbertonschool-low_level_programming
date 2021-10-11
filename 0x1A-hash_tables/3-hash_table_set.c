@@ -37,7 +37,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-			if (strcpm(ht->array[index]->key, key))
+			if (strcmp(ht->array[index]->key, key))
 			{
 				ht->array[index]->value = (char *)value;
 			}
