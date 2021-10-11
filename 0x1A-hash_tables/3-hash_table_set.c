@@ -36,8 +36,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		status = 1;
 	}
 	else
-	{
-		if (ht->array[index]->key == key)
+	{	
+		if (strcmp(ht->array[index]->key, key) == 0)
 		{
 			ht->array[index]->value = (char *)value;
 		}
