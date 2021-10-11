@@ -37,19 +37,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		while (ht->array[index] != NULL)
+		if (strcmp(ht->array[index]->key, key) == 0)
 		{
-			if (strcmp(ht->array[index]->key, key) == 0)
-			{
-				ht->array[index]->value = (char *)value;
-				status = 1;
-				return (status);
-			}
-			ht->array[index] = ht->array[index]->next;
+			ht->array[index]->value = (char *)value;
 		}
+		else
+		{
 			node->next = ht->array[index];
 			ht->array[index] = node;
 			status = 1;
+		}
 	}
 	return (status);
 }
