@@ -17,9 +17,8 @@ clean:
 	rm -f *~ school
 
 oclean: 
-	rm -f *.o
+	rm -f main.o school.o
 
-fclean:
-	rm -f *~ *.o school
+fclean: clean oclean 
 
 re: oclean all
