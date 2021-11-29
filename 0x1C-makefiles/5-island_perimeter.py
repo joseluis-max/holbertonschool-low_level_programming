@@ -8,6 +8,8 @@ def island_perimeter(grid):
         Grid: list representation island
         Retunr: perimeter
     """
+    if grid is None:
+        return None
     h = 0
     w = 0
     for row in grid:
