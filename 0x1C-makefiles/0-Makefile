@@ -1,0 +1,4 @@
+all: compile
+
+compile: main.c holberton.c main.c
+	gcc main.c school.c -o school
