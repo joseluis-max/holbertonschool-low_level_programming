@@ -2,11 +2,10 @@ CC = gcc
 SRC = main.c school.c
 OBJ = main.o school.o
 NAME = school
-CFLAGS = -o
 RM = rm
 
 all: $(OBJ)
-	$(CC) $(OBJ) $(CFLAGS) $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 main.o: main.c m.h
 	gcc -c -o main.o main.c
