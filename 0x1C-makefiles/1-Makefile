@@ -1,0 +1,9 @@
+NAME_FILE = school
+CC = gcc
+SRC = *.c
+CFLAGS = -o
+
+all: compile
+
+compile: main.c school.c main.c
+	$(CC) $(SRC) $(CFLAGS) $(NAME_FILE)
