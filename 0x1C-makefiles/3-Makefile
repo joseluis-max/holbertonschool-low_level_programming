@@ -3,6 +3,7 @@ SRC = main.c school.c
 OBJ = main.o school.o
 NAME = school
 CFLAGS = -o
+RM = rm
 
 all: $(OBJ)
 	$(CC) $(OBJ) $(CFLAGS) $(NAME)
@@ -14,10 +15,10 @@ school.o: school.c m.h
 	gcc -c -o school.o school.c
 
 clean:
-	rm -f *~ school
+	$(RM) -f *~ school
 
 oclean: 
-	rm -f main.o school.o
+	$(RM) -f main.o school.o
 
 fclean: clean oclean 
 
