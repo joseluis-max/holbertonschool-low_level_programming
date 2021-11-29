@@ -1,5 +1,5 @@
 CC = gcc
-.PHONY: all main
+.PHONY: all clean oclean fclean re
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
