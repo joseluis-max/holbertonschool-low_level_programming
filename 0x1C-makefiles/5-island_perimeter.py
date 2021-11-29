@@ -14,9 +14,15 @@ def island_perimeter(grid):
     Grid is completely surrounded by water, and there is one island (or nothing).
     The island doesn’t have “lakes” (water inside that isn’t connected to the water around the island).
     """
-    sum  = 0
+    h = 0
+    w = 0
     for row in grid:
-        sum = sum + row.count(1)
-    if sum == 0:
-        return 0;
-    return (sum + 1) * 2
+        try:
+            if (row.index(1) >= 0):
+                h = h + 1
+        except:
+            pass
+    for row in grid:
+        w = max(row.count(1), w)
+    
+    return h * 2 + w * 2
