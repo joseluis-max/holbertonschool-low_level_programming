@@ -5,5 +5,5 @@ CFLAGS = -o
 
 all: compile
 
-compile: main.c school.c main.c
+compile: main.c school.c m.h
 	$(CC) $(SRC) $(CFLAGS) $(NAME_FILE)
