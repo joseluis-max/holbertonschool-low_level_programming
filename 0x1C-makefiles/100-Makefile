@@ -1,18 +1,16 @@
 CC = gcc
 .PHONY: all main
-SRC = main.c school.c
-OBJ = main.c school.c
+SRC = *.c
+OBJ = *.o
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-main.o: main.c m.h
-	gcc -c -o main.c main.o
+*.o: main.c m.h
+	gcc -c *.c
 
-school.o: school.c m.h
-	gcc -c -o school.c school.o
 
 clean:
 	$(RM) -f *~ $(NAME)
