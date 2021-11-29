@@ -15,10 +15,10 @@ school.o: school.c m.h
 	gcc -c -o school.o school.c
 
 clean:
-	$(RM) -f *~ school
+	$(RM) -f *~ $(NAME)
 
 oclean: 
-	$(RM) -f main.o school.o
+	$(RM) -f $(OBJ)
 
 fclean: clean oclean 
 
