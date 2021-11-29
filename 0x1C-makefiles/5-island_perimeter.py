@@ -17,4 +17,6 @@ def island_perimeter(grid):
     sum  = 0
     for row in grid:
         sum = sum + row.count(1)
+    if sum == 0:
+        return 0;
     return (sum + 1) * 2
