@@ -51,6 +51,7 @@
     Therefore essentially, the function prototype specifies the input/output interlace to the function 
     i.e. what to give to the function and what to expect from the function.
     The prototype of a function is also called the signature of the function.
+    
 **Scope of variables**
 
   A scope is a region of the program, and the scope of variables refers to the area of
